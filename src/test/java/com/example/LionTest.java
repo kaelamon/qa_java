@@ -2,9 +2,6 @@ package com.example;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.ValueSource;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.List;
@@ -16,7 +13,7 @@ import static org.mockito.Mockito.when;
 public class LionTest {
 
     @Mock
-    FelineInterface feline;
+    Feline feline;
 
     @Test
     public void shouldThrowExceptionWhenSexIsInvalid() {
